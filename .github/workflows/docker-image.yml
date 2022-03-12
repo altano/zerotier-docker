@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build zerotier --build-arg VERSION=${{ matrix.node_version }} --tag altano/zerotier:v${{ matrix.node_version }}_d$(date +%s)
+      run: docker build zerotier --build-arg VERSION=${{ matrix.zerotier_version }} --tag altano/zerotier:v${{ matrix.node_version }}_d$(date +%s)
