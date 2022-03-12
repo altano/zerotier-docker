@@ -27,7 +27,6 @@ jobs:
           tags: |
             type=ref,event=branch
             type=ref,event=pr
-            type=sha
             type=raw,value=v${{ matrix.zerotier_version }}
             type=raw,value=latest,enable=${{ matrix.latest == true }}
       - name: Login to DockerHub
