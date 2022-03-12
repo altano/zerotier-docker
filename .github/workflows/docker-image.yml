@@ -28,8 +28,8 @@ jobs:
             type=ref,event=branch
             type=ref,event=pr
             type=sha
-            type=raw,version=${{ matrix.zerotier_version }}
-            type=raw,latest=${{ matrix.latest == true }}
+            type=raw,value=v${{ matrix.zerotier_version }}
+            type=raw,latest,enable=${{ matrix.latest == true }}
       - name: Login to DockerHub
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v1
