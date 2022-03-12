@@ -6,6 +6,9 @@ ARG PACKAGE_BASEURL=https://download.zerotier.com/debian/buster/pool/main/z/zero
 ARG ARCH=amd64
 ARG VERSION
 
+# Make sure VERSION is set
+RUN test -n "$VERSION"
+
 LABEL build_version="Alan: version:${VERSION} arch:${ARCH} package_baseurl=${PACKAGE_BASEURL}"
 LABEL org.opencontainers.image.authors="Alan Norbauer <altano@gmail.com>"
 LABEL org.opencontainers.image.version="${VERSION}"
