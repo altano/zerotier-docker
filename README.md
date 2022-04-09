@@ -1,4 +1,4 @@
-NOTE: 🚨 Don't use this Docker image 🚨
+NOTE: 🚨 Don't use this Docker image. use [the official one](https://hub.docker.com/r/zerotier/zerotier) instead 🚨
 
 I created this while the official zerotier Docker image didn't work for a brief period of time so that (a) I had a working Docker image and (b) I could play with alternative ways of implementing the image. Since the official Docker image [was fixed and improved](https://github.com/zerotier/ZeroTierOne/pull/1596) (to be better than this one) there is no point in using this anymore.
 
